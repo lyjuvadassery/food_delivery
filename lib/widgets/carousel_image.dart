@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/models/banner_image.dart';
 import 'package:flutter_demo/utilities/constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CarouselImage extends StatelessWidget {
   BannerImage bannerImage;
@@ -59,7 +60,13 @@ class CarouselImage extends StatelessWidget {
                           child: Center(
                             child: Text(
                               'Trupti',
-                              style: TextStyle(fontSize: 12.0),
+                              style: GoogleFonts.galada(
+                                textStyle: TextStyle(
+                                  fontSize: 12.0,
+                                  color: kDarkGrey2,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
                         ),
@@ -72,8 +79,12 @@ class CarouselImage extends StatelessWidget {
                     children: [
                       Text(
                         'Think Mumbai.',
-                        style: TextStyle(
-                          fontSize: 14.0,
+                        style: GoogleFonts.galada(
+                          textStyle: TextStyle(
+                            fontSize: 14.0,
+                            color: kDarkGrey2,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       CircleAvatar(
@@ -83,8 +94,12 @@ class CarouselImage extends StatelessWidget {
                       ),
                       Text(
                         'Think Trupti',
-                        style: TextStyle(
-                          fontSize: 14.0,
+                        style: GoogleFonts.galada(
+                          textStyle: TextStyle(
+                            fontSize: 14.0,
+                            color: kDarkGrey2,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ],

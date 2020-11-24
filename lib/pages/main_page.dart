@@ -12,13 +12,19 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 0;
+  int _selectedIndex;
 
   List<GlobalKey<NavigatorState>> _navigatorKeys = [
     GlobalKey<NavigatorState>(),
     GlobalKey<NavigatorState>(),
     GlobalKey<NavigatorState>()
   ];
+
+  @override
+  void initState() {
+    _selectedIndex = 1;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
