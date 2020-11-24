@@ -36,8 +36,24 @@ class _SearchFieldState extends State<SearchField> {
           Icons.search,
           color: kDarkGrey2,
         ),
-        suffixIcon: Icon(Icons.mic),
+        suffixIcon: Icon(
+          Icons.mic,
+          color: kDarkGrey,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: kDarkGrey, width: 0.5),
+          borderRadius: BorderRadius.all(
+            Radius.circular(50.0),
+          ),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: kDarkGrey, width: 0.5),
+          borderRadius: BorderRadius.all(
+            Radius.circular(50.0),
+          ),
+        ),
         border: OutlineInputBorder(
+          borderSide: const BorderSide(color: kDarkGrey, width: 0.5),
           borderRadius: BorderRadius.all(
             Radius.circular(50.0),
           ),
