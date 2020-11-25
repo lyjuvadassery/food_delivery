@@ -35,7 +35,7 @@ dependencies:
 
   google_fonts: ^1.1.1
 
-  easy_rich_text: '^0.5.2'
+  # easy_rich_text: '^0.5.2'
 
 dev_dependencies:
   flutter_test:

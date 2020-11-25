@@ -29,7 +29,7 @@ final vegBiryani = FoodItem(
   name: 'Veg Biryani',
   price: 220.00,
   imageUrl:
-      'https://recipesofhome.com/wp-content/uploads/2020/06/veg-biryani-recipe-720x540.jpg',
+      'https://yummytummyrecipes.com/wp-content/uploads/2020/08/Untitled-design-min.png',
   serving: 'per plate [350 gm]',
 );
 
@@ -139,3 +139,5 @@ final chowmienSoup = FoodItem(
       'https://www.mamalovesfood.com/wp-content/uploads/2020/01/EASY-CHOW-MEIN-SOUP-RECIPE.jpg',
   serving: '300 gm per bowl',
 );
+
+List<FoodItem> shoppingCardItems = [sevpuri];

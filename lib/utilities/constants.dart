@@ -10,8 +10,9 @@ const kUnselectedGreyColor = Color(0xFFCDCDCD);
 const kUnselectedLightGrey = Color(0xFFC9C9C9);
 const kMediumGrey = Color(0xFFEEEEEE);
 const kMediumGreen = Color(0xFF00DD00);
+const kDarkGreen = Color(0xFF007700);
 
-const kHeadingTextStyle = TextStyle(
-  fontSize: 20,
-  fontWeight: FontWeight.w800,
-);
+// const kHeadingTextStyle = TextStyle(
+//   fontSize: 20,
+//   fontWeight: FontWeight.w800,
+// );

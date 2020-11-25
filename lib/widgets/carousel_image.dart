@@ -93,7 +93,7 @@ class CarouselImage extends StatelessWidget {
                         backgroundColor: Colors.transparent,
                       ),
                       Text(
-                        'Think Trupti',
+                        'Think Trupti.',
                         style: GoogleFonts.galada(
                           textStyle: TextStyle(
                             fontSize: 14.0,

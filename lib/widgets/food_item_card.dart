@@ -1,6 +1,6 @@
-import 'package:easy_rich_text/easy_rich_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/models/food_item.dart';
+import 'package:flutter_demo/pages/food_item_details_page.dart';
 import 'package:flutter_demo/utilities/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -90,15 +90,31 @@ class FoodItemCard extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              Container(
-                width: double.maxFinite,
-                child: Center(
-                  child: CircleAvatar(
-                    radius: 40,
-                    backgroundImage: NetworkImage(
-                      foodItem.imageUrl,
+              InkWell(
+                onTap: () {
+                  print('Food Item ID: ${foodItem.id}');
+
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          FoodItemDetailsPage(foodItem: foodItem),
                     ),
-                    backgroundColor: Colors.transparent,
+                  );
+                },
+                child: Container(
+                  width: double.maxFinite,
+                  child: Center(
+                    child: Hero(
+                      tag: 'avatar_' + foodItem.id.toString(),
+                      child: CircleAvatar(
+                        radius: 40,
+                        backgroundImage: NetworkImage(
+                          foodItem.imageUrl,
+                        ),
+                        backgroundColor: Colors.transparent,
+                      ),
+                    ),
                   ),
                 ),
               ),
