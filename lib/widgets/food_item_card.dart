@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/models/food_item.dart';
 import 'package:flutter_demo/pages/food_item_details_page.dart';
 import 'package:flutter_demo/utilities/constants.dart';
+import 'package:flutter_demo/widgets/custom_recttween.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
@@ -107,6 +108,9 @@ class FoodItemCard extends StatelessWidget {
                   child: Center(
                     child: Hero(
                       tag: 'avatar_' + foodItem.id.toString(),
+                      createRectTween: (begin, end) {
+                        return CustomRectTween(begin: begin, end: end);
+                      },
                       child: CircleAvatar(
                         radius: 40,
                         backgroundImage: NetworkImage(

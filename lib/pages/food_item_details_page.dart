@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/models/food_item.dart';
 import 'package:flutter_demo/models/food_packet.dart';
 import 'package:flutter_demo/utilities/constants.dart';
+import 'package:flutter_demo/widgets/custom_recttween.dart';
 import 'package:intl/intl.dart';
 
 class FoodItemDetailsPage extends StatefulWidget {
@@ -136,10 +137,15 @@ class _FoodItemDetailsPageState extends State<FoodItemDetailsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Icon(
-                          Icons.close,
-                          size: 24.0,
-                          color: kDarkGrey2,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Icon(
+                            Icons.close,
+                            size: 24.0,
+                            color: kDarkGrey2,
+                          ),
                         ),
                         SizedBox(
                           width: 20.0,
